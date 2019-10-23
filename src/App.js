@@ -30,7 +30,7 @@ const App = () => {
 
   const buyItem = item => {
     // dipsatch an action here to add an item
-    
+
   };
 
   return (
@@ -40,7 +40,8 @@ const App = () => {
         <AddedFeatures car={state.car} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={state.additionalFeatures} />
+        <AdditionalFeatures additionalFeatures={state.additionalFeatures}
+          removeFeature={removeFeature} buyItem={buyItem} />
         <Total car={state.car} additionalPrice={state.additionalPrice} />
       </div>
     </div>
